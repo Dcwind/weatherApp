@@ -8,7 +8,7 @@ app.config.from_pyfile('config.cfg')
 db = SQLAlchemy(app)
 
 class Test(db.Model):
-    id = db.Colmn(db.Integer, primary_key=True)
+    id = db.Column(db.Integer, primary_key=True)
 
     
 if __name__ == '__main__':
