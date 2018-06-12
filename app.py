@@ -15,7 +15,7 @@ def index():
 
     weather = {
         'city': city,
-        'temperature': r['main']['temp'],
+        'temperature': round(r['main']['temp']),
         'description': r['weather'][0]['description'],
         'humidity': r['main']['humidity'],
         'icon': r['weather'][0]['icon']
